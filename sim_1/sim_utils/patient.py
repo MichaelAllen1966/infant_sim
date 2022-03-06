@@ -73,6 +73,7 @@ class Patient:
         # Convert lists of dictionaries into pandas dataframes
         self.health = pd.DataFrame(self.health)
         self.observations = pd.DataFrame(self.observations)
+        self.observations['label'] = self.patient_type_index
 
     def update_health(self):
         """
