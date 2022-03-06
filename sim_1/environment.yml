@@ -1,0 +1,13 @@
+name: infant
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - jupyterlab
+  - matplotlib
+  - numpy
+  - pip
+  - pandas
+  - python=3.9
+  - pip:
+    - simpy
