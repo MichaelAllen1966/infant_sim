@@ -62,7 +62,7 @@ class Patient:
             jitter = self.global_vars.observation_jitter
             obs = value + random.randint(-jitter, jitter)
             obs = np.clip(obs, 0 , 100)
-            self.current_observations[key] = obs + random.randint(-jitter, jitter)
+            self.current_observations[key] = obs
         self.observations.append(dict(self.current_observations))
 
     def loop_through_days(self):
