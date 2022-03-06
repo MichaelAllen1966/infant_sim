@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 import random
 
 from operator import itemgetter
@@ -68,6 +69,10 @@ class Patient:
         for day in range(self.global_vars.duration):
             self.update_health()
             self.get_observations()
+
+        # Convert lists of dictionaries into pandas dataframes
+        self.health = pd.DataFrame(self.health)
+        self.observations = pd.DataFrame(self.observations)
 
     def update_health(self):
         """
