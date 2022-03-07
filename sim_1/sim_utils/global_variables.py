@@ -20,8 +20,8 @@ class GlobVars:
             0: 'Improving without treatment',
             1: 'GI deterioration',
             2: 'Pulmnonary deterioration',
-            3: 'Cerbral derioration',
-            4: 'Death with any treatment'}
+            3: 'Cerebral deterioration',
+            4: 'All system deterioration'}
 
         self.starting_health_range = (20, 65)
         self.delay_before_condition_range = (5, 50)
