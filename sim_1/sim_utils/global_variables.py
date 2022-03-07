@@ -12,7 +12,7 @@ class GlobVars:
     def __init__(self):
         """GlobVars constructor"""
 
-        self.duration = 100
+        self.duration = 150
 
         self.infant_id = 0
 
@@ -23,8 +23,10 @@ class GlobVars:
             3: 'Cerbral derioration',
             4: 'Death with any treatment'}
 
-        self.starting_health_range = (30, 60)
-        self.observation_jitter = 2
+        self.starting_health_range = (20, 65)
+        self.delay_before_condition_range = (5, 50)
+        self.change_rate_range = (0.75, 1.5)
+        self.observation_jitter = 5
         
     def get_new_infant_id(self):
         """Create new infant ID by incrementing count."""
